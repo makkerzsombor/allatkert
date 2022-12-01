@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(129, 244, 244);    
+}
+div{
+    background-color: azure;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

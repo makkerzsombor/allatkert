@@ -3,10 +3,31 @@
   <head>
     <meta charset="utf-8" />
     <title>App</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='/main.css'>
   </head>
   <body>
-    <form action="post">
-        
+    <form method="post">
+        <div>
+            <p>
+                <label>Az állat neve:</label>
+                <input type="text" name="allatNeve" required>
+            </p>
+            <p>
+                <label>Az állat kora:</label>
+                <input type="number" name="allatKora" required min="1">
+            </p>
+            <p>
+                <label>Az állat fajtája:</label>
+                <select name="allatFajta">
+                    <option value="mamut">Mamut</option>
+                    <option value="kigyo">Kigyó</option>
+                    <option value="pingvin">Pingvin</option>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="OK">
+            </p>
+        </div>
     </form>
   </body>
 </html>

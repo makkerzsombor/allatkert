@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/main.css'>
+</head>
+<body>
+    <div>
+        <label>Állat neve: </label>
+        <p><%= allatNeve %></p> <br>
+
+        <label>Állat kora: </label>
+        <p><%= allatKora %></p> <br>
+
+        <label>Állat fajtája: </label>
+        <p><%= allatFajta %></p> <br>
+
+        <p><% if(allatFajta == "mamut") {%>
+            <p>
+                A mamut (Mammuthus) az emlősök (Mammalia) osztályának ormányosok (Proboscidea) rendjébe, ezen belül az elefántfélék (Elephantidae) családjába tartozó régen kihalt nem.
+        
+                A mamutoknak és az Elephas-fajoknak a nukleinsavas DNS-vizsgálata azt mutatta, hogy a két állatcsoport körülbelül 2,5-5,4 millió évvel ezelőtt vált ketté.[1][2]
+        
+                Az ormányosnem első képviselői, tehát a kora pliocén korszakban körülbelül 5 millió évvel ezelőtt jelentek meg, az utolsók pedig kb. 4000 évvel ezelőtt haltak ki.[3] Az emlősnem utolsó fajai a kőkorszak emberének kortársai voltak Eurázsiában és Észak-Amerikában. A csoport legközelebbi élő rokona az ázsiai elefánt (Elephas maximus).
+            </p>
+            <img src="/pictures/mamut.jpg" alt="Mamut">
+        <% } else if (allatFajta == "kigyo") {%>
+            <p>
+                A kígyók (Serpentes, Ophidia) a hüllők osztályának (Reptilia), Diapsida alosztályába tartozó, azon belül a pikkelyes hüllők rendjébe (Squamata) sorolt alrend. Legközelebbi ma élő rokonaik a gyíkok (Lacertilia), melyekkel közös őstől erednek, így monofiletikus egységet, kládot alkotnak. Testalkotásuk igen sajátos, szinte semmilyen más állatcsoporttal össze nem téveszthetők. Végtagjaikat az evolúció során teljesen elvesztették, így hason kúszó, esetleg vízi szervezetekké alakultak.
+            </p>
+            <img src="/pictures/kigyo.jpg" alt="Kigyó">
+                <% } else { %>
+            <p>
+            A pingvinalakúak (Sphenisciformes) a madarak (Aves) osztályának egyik rendje, melybe csak egyetlenegy család, a pingvinfélék (Spheniscidae) tartozik.
+
+            2014-ben 48 jellegzetes madárfajnak feltérképezték a teljes genomját, köztük a pingvinét és a viharmadár nevű testvértaxonját;[1] ebből a kutatásból kitudódott, hogy e két madárrend körülbelül 60 millió évvel ezelőtt vált szét (95% CI, 56.8-62.7).[2] A pingvinalakúak és a viharmadár-alakúak (Procellariiformes) alkotják az úgynevezett Austrodyptornithes csoportot.
+            </p>
+            <img src="/pictures/pingvin.jpg" alt="Pingvin">
+               <% } %>
+        </p>
+    </div>
+</body>
+</html>
